@@ -29,7 +29,7 @@
     "typescript"
   ],
   "author": "Amine Kamal",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/AmineKamal/simple-html-scraper/issues"
   },
