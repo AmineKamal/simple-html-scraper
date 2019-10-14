@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "test": "jest --config jestconfig.json",
+    "test": "jest --detectOpenHandles --config jestconfig.json",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
@@ -36,11 +36,15 @@
   "homepage": "https://github.com/AmineKamal/simple-html-scraper#readme",
   "devDependencies": {
     "@types/jest": "^24.0.18",
+    "@types/puppeteer": "^1.20.2",
     "jest": "^24.9.0",
     "prettier": "^1.18.2",
     "ts-jest": "^24.1.0",
     "tslint": "^5.20.0",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "puppeteer": "^1.20.0"
   }
 }
