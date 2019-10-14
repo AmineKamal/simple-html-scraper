@@ -13,15 +13,15 @@ npm i simple-html-scraper
 ## Usage
 
 ```typescript
-import '*' as Scraper from 'simple-html-scraper';
+import { Scraper } from 'simple-html-scraper';
 
 const scraper = new Scraper(/* { options } */);
 
 (async () => {
-  const result = await scraper.get("url");
+  const result = await scraper.get('url');
   console.log(result.content); // Html
   console.log(result.images); // Array of image urls
-});
+})();
 
 /* options
 {
